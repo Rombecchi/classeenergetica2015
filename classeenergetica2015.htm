@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Classe Energetica 2015</title>
+<meta http-equiv="-refresh" content="10">
+
+<style type="text/css">
+	body {padding:1cm;}
+	
+	
+	/* ==== CLASSE ENERGETICA 2015 ==== */
+	.box-clen-2015 {width:82mm; height:127mm; -moz-height:126mm; -ms-height:126mm; border:1mm #336600 solid; background:#FFF; position:relative; background:#FFF; zoom:1; box-sizing:content-box;}
+	
+	.box-clen-2015 .titolo {background-color:#336600; color:#FFF; padding:2mm; font-family:"Century Gothic", Arial Black, Arial; font-size:4mm; border:.5mm #336600 solid; display:inline-block; width:51mm; height:5mm; text-align:center; font-weight:bold;}
+	
+	.box-clen-2015 .logo {position:absolute; right:0; top:0; width:24mm; height:16mm; border:.5mm #336600 solid; padding:3mm 1mm; text-align:center; font-size:10mm; font-family:"Times New Roman", Times, serif; font-weight:bold;}
+	.box-clen-2015 .logo .A {color:#FF0000; border-bottom:2px #FF0000 solid; padding-bottom:1mm;}
+	.box-clen-2015 .logo .P {color:#FF9900; border-bottom:2px #FF9900 solid; padding-bottom:1mm;}
+	.box-clen-2015 .logo .E {color:#00FF00; border-bottom:2px #00FF00 solid; padding-bottom:1mm;}
+	.box-clen-2015 .logo .anno {color:#336600; border-bottom:2px #336600 solid; padding-bottom:3mm; font-size:2mm;}
+	
+	.box-clen-2015 .schema {width:48mm; padding:1mm; height:90mm; display:inline-block; margin:1mm 0 0 1mm;}
+	.box-clen-2015 .schema .sottotitolo {padding:2mm; color:#336600; font-family:"Century Gothic", Arial Black, Arial; font-size:3mm; font-weight:bold; margin-bottom:5mm; margin-top:3mm;}
+	.box-clen-2015 .schema .scala {display:block; position:relative;}
+	.box-clen-2015 .schema .top, .box-clen-2015 .schema .bottom  {display:block; text-align:center; color:#000; font-family:"Century Gothic", Arial Black, Arial; font-size:2.5mm; font-weight:bold;}
+	.box-clen-2015 .schema .top span, .box-clen-2015 .schema .bottom span  {font-size:8mm; vertical-align:middle; color:#F00; margin-right:2mm; font-weight:normal;}
+	.box-clen-2015 .schema .top span {color:#336600}
+	
+	.box-clen-2015 .schema .valori {position:relative;}	
+	.box-clen-2015 .schema .valori .classe-en {display:block; height:21px; position:relative; width:100%;}
+	.box-clen-2015 .schema .valori .classe-en .bordo {position:relative; width:16px; height:16px; background:#000; padding:1px; color:#000; display:block;}
+	.box-clen-2015 .schema .valori .classe-en .bordo:after {content:""; position:absolute; border-bottom:9px solid transparent; border-left:9px solid #000; border-top:9px solid transparent; margin-left:17px; margin-top: -1px; z-index:1; height: 0px; width: 0px;}
+	.box-clen-2015 .schema .valori .classe-en .bordo div {position:absolute; width:13px; height:12px; background:#FFF; padding:2px; margin-bottom:1mm; color:#000; font-family:"Century Gothic", Arial Black, Arial; font-size:3mm; z-index:2; font-weight:bold;}
+	.box-clen-2015 .schema .valori .classe-en .bordo div:after {content:""; position:absolute; border-bottom:8px solid transparent; border-left:8px solid #FFF; border-top:8px solid transparent; margin-left:15px; margin-top: -2px; z-index:2; height: 0px; width: 0px;}
+	.box-clen-2015 .schema .valori .classe-en div span {position:absolute; top:1px;}
+	.box-clen-2015 .schema .valori .classe-en .freccia {display:block; height:17px; width:2mm; background-color:#EEE; position:absolute; left:30px; top:0; z-index:3}
+	.box-clen-2015 .schema .valori .classe-en .freccia:before {content:""; position:absolute; border-bottom:9px solid transparent; border-left:9px solid #EEE; border-top:9px solid transparent; margin-left:100%; height: 0px; width: 0px;}
+	.box-clen-2015 .schema .valori .classe-en .freccia:after {content:""; position:absolute; border-bottom:9px solid transparent; border-left:9px solid #FFF; border-top:9px solid transparent; margin-left:0; height: 0px; width: 0px;}
+	.box-clen-2015 .schema .valori .classe-en .chiudi {display:block; height:.3mm; width:36mm; background-color:#000; position:absolute; left:40px; top:8px; z-index:2;}
+	
+	.box-clen-2015 .schema .valori .classe-en.A4 .freccia  {width:3mm; background-color:#336600;}
+	.box-clen-2015 .schema .valori .classe-en.A4 .freccia:before {border-left-color:#336600;}
+	.box-clen-2015 .schema .valori .classe-en.A3 .freccia  {width:6mm; background-color:#006600;}
+	.box-clen-2015 .schema .valori .classe-en.A3 .freccia:before {border-left-color:#006600;}
+	.box-clen-2015 .schema .valori .classe-en.A2 .freccia  {width:9mm; background-color:#009900;}
+	.box-clen-2015 .schema .valori .classe-en.A2 .freccia:before {border-left-color:#009900;}
+	.box-clen-2015 .schema .valori .classe-en.A1 .freccia  {width:12mm; background-color:#00cc00;}
+	.box-clen-2015 .schema .valori .classe-en.A1 .freccia:before {border-left-color:#00cc00;}
+	.box-clen-2015 .schema .valori .classe-en.B .freccia  {width:15mm; background-color:#99cc00;}
+	.box-clen-2015 .schema .valori .classe-en.B .freccia:before {border-left-color:#99cc00;}
+	.box-clen-2015 .schema .valori .classe-en.C .freccia  {width:18mm; background-color:#ffff00;}
+	.box-clen-2015 .schema .valori .classe-en.C .freccia:before {border-left-color:#ffff00;}
+	.box-clen-2015 .schema .valori .classe-en.D .freccia  {width:21mm; background-color:#ffc000;}
+	.box-clen-2015 .schema .valori .classe-en.D .freccia:before {border-left-color:#ffc000;}
+	.box-clen-2015 .schema .valori .classe-en.E .freccia  {width:24mm; background-color:#e46c0a;}
+	.box-clen-2015 .schema .valori .classe-en.E .freccia:before {border-left-color:#e46c0a;}
+	.box-clen-2015 .schema .valori .classe-en.F .freccia  {width:27mm; background-color:#c0504d;}
+	.box-clen-2015 .schema .valori .classe-en.F .freccia:before {border-left-color:#c0504d;}
+	.box-clen-2015 .schema .valori .classe-en.G .freccia  {width:30mm; background-color:#FF0000;}
+	.box-clen-2015 .schema .valori .classe-en.G .freccia:before {border-left-color:#FF0000;}
+	
+	
+	.box-clen-2015 .eeqz {background-color:#008000; position:absolute; right:1mm; top:24mm; width:26mm; height:10mm; color:#FFF; padding:1mm; font-family:"Century Gothic", Arial Black, Arial; font-size:3mm; line-height:3.5mm; border:.5mm #336600 solid; display:inline-block; text-align:left; font-weight:bold;}
+	.box-clen-2015 .eeqz .checkbox {float:right; width:6mm; height:6mm; border:1px #000 solid; background:#FFF; padding:0; color:#000; text-align:center; font-family:"Century Gothic", Arial Black, Arial; font-size:5mm; line-height:6mm;}
+	
+	.box-clen-2015 .riassunto {background-color:#CE9800; position:absolute; right:1mm; top:38mm; width:26mm; height:55mm; color:#FFF; padding:1mm; font-family:"Century Gothic", Arial Black, Arial; font-size:5mm; line-height:5mm; border:.5mm #CE9800 solid; display:inline-block; text-align:center; font-weight:bold;}
+	.box-clen-2015 .riassunto .cetit {display:block; text-align:center; color:#000; font-family:Arial Black, Arial; margin-top:1mm;}
+	.box-clen-2015 .riassunto .cetit span {display:block; text-align:center; font-size:3mm;}
+	.box-clen-2015 .riassunto .clen {font-size:8mm; line-height:10mm; color:#336600; margin-bottom:4mm;}
+	.box-clen-2015 .riassunto .epgl-nren {display:block; background-color:#FFF; border:.5mm #336600 solid; padding:1mm; color:#336600}
+	.box-clen-2015 .riassunto .epgl-nren .cesub {font-size:5mm;}
+	.box-clen-2015 .riassunto .epgl-nren .cesub span {font-size:3.5mm}
+	.box-clen-2015 .riassunto .epgl-nren .valore {display:block; font-size:7mm; margin-top:5mm; margin-bottom:3mm;}
+	.box-clen-2015 .riassunto .epgl-nren .um {font-size:3mm}
+	.box-clen-2015 .riassunto .frecciasx {background-color:#CE9800; border-color:#CE9800; position:absolute; top:30mm; left:-1mm; width:1mm; height:5mm; z-index:3;}
+	.box-clen-2015 .riassunto .frecciasx:before {content:""; position:absolute; border-bottom:24px solid transparent; border-right:15px solid #CE9800; border-top:24px solid transparent; margin-left:-17px; margin-top:-14px; z-index:3; height: 0px; width: 0px;}
+	
+	.box-clen-2015 .epgl-ren {border-top:.5mm #336600 solid; padding:2mm; color:#336600; font-family:"Century Gothic", Arial Black, Arial; font-size:3mm; font-weight:bold; text-align:center; height: 8mm;}
+	.box-clen-2015 .epgl-ren span {display:block; color:#000}
+	
+	.box-clen-2015 .pef {border-top:.5mm #336600 solid; padding:0mm; color:#336600; font-family:"Century Gothic", Arial Black, Arial; font-size:3mm; font-weight:bold; text-align:left;}
+	.box-clen-2015 .pef div {float:left; padding:1mm; height:9mm;}
+	.box-clen-2015 .pef .pef-etichetta {display:inline-block; width:38mm; border-right:.5mm #336600 solid; padding-left:2mm; padding-top:2mm; height:9mm; line-height:3mm;}
+	.box-clen-2015 .pef .pef-s span.t {display:block;}
+	.box-clen-2015 .pef .pef-inv {display:inline-block; width:18mm; border-right:.5mm #336600 solid; text-align:center; height: 9mm;}
+	.box-clen-2015 .pef .pef-est {display:inline-block; width:18mm; text-align:center; height: 9mm;}
+	.box-clen-2015 .pef .faccina {font-family:Wingdings; position:relative; background:#FFF; color:#000; display:inline-block; font-size:20px; padding:0px; font-weight:normal; vertical-align:middle;}
+	.box-clen-2015 .pef .faccina.selected:before {content:"X"; font-size:5mm;  font-family:"Century Gothic", Arial Black, Arial; position:absolute; margin-left:.85mm}
+	.box-clen-2015 .pef .svgs {margin-top:3px; float:none; padding:0; height:auto;}
+	.box-clen-2015 .pef .svgs svg {margin:1px 1px}
+</style>
+
+</head>
+
+<body>
+
+	<div class="box-clen-2015">
+		<div class="titolo">PRESTAZIONE ENERGETICA</div>
+		<div class="logo">
+			<span class="A">A</span><span class="P">P</span><span class="E">E</span><span class="anno">2015</span>
+		</div>
+		<div class="schema">
+			<div class="sottotitolo">Prestazione energetica</div>
+			<div class="scala">
+				<div class="top"><span>+</span> Più efficiente</div>
+				<div class="valori">
+					<div class="classe-en A4">
+						<div class="bordo"><div><span>A4</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+					<div class="classe-en A3">
+						<div class="bordo"><div><span>A3</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+					<div class="classe-en A2">
+						<div class="bordo"><div><span>A2</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+					<div class="classe-en A1">
+						<div class="bordo"><div><span>A1</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+					<div class="classe-en B">
+						<div class="bordo"><div><span>B</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+					<div class="classe-en C">
+						<div class="bordo"><div><span>C</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+					<div class="classe-en D">
+						<div class="bordo"><div><span>D</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+					<div class="classe-en E">
+						<div class="bordo"><div><span>E</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+					<div class="classe-en F">
+						<div class="bordo"><div><span>F</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+					<div class="classe-en G">
+						<div class="bordo"><div><span>G</span></div></div>
+						<div class="freccia"></div>
+						<div class="chiudi"></div>
+					</div>
+				</div>
+				<div class="bottom"><span>&minus;</span> Meno efficiente</div>
+			</div>
+		</div>
+		<div class="eeqz">
+			<div class="checkbox">X</div> EDIFICIO A ENERGIA QUASI ZERO
+		</div>
+		<div class="riassunto">
+			<div class="cetit">CLASSE<span>ENERGETICA</span></div>
+			<div class="clen">A4</div>
+			<div class="epgl-nren">
+				<div class="cesub">EP <span>gl,nren</span></div>
+				<div class="valore">249,88</div>
+				<div class="um">kWh/m<sup>2</sup> anno</div>
+			</div>
+			<div class="frecciasx"></div>
+		</div>
+		<div class="epgl-ren">
+			Indice della prestazione energetica rinnovabile
+			<span>EPgl,ren : 352,00 kWh/m<sup>2</sup> anno</span>
+		</div>
+		<div class="pef">
+			<div class="pef-etichetta">Prestazione energetica del fabbricato</div>
+			<div class="pef-s pef-inv">
+				<span class="t">Inverno</span>
+				<div class="svgs">
+					<svg width="18" height="18">
+					  <circle cx="9" cy="9" r="8" stroke="#000" stroke-width="1" fill="#FFF" />
+					  <circle cx="6" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <circle cx="12" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <path fill="#FFF" stroke="#000000" stroke-miterlimit="10" d="M3.8,8.5c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2"/>
+					</svg>
+					<svg width="18" height="18">
+					  <circle cx="9" cy="9" r="8" stroke="#000" stroke-width="1" fill="#FF0" />
+					  <circle cx="6" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <circle cx="12" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <line x1="4" y1="12" x2="14" y2="12" stroke="#000" stroke-width="1" />
+					</svg>
+					<svg width="18" height="18">
+					  <circle cx="9" cy="9" r="8" stroke="#000" stroke-width="1" fill="#FFF" />
+					  <circle cx="6" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <circle cx="12" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <path fill="#FFF" stroke="#000000" stroke-miterlimit="10" d="M14,12.4c-0.7-1.7-2.6-3-5-3s-4.3,1.2-5,3"/>
+					</svg>
+				</div>
+			</div>
+			<div class="pef-s pef-est">
+				<span class="t">Estate</span>
+				<div class="svgs">
+					<svg width="18" height="18">
+					  <circle cx="9" cy="9" r="8" stroke="#000" stroke-width="1" fill="#FF0" />
+					  <circle cx="6" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <circle cx="12" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <path fill="#FF0" stroke="#000000" stroke-miterlimit="10" d="M3.8,8.5c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2"/>
+					</svg>
+					<svg width="18" height="18">
+					  <circle cx="9" cy="9" r="8" stroke="#000" stroke-width="1" fill="#FFF" />
+					  <circle cx="6" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <circle cx="12" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <line x1="4" y1="12" x2="14" y2="12" stroke="#000" stroke-width="1" />
+					</svg>
+					<svg width="18" height="18">
+					  <circle cx="9" cy="9" r="8" stroke="#000" stroke-width="1" fill="#FFF" />
+					  <circle cx="6" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <circle cx="12" cy="7" r="1" stroke="#000" stroke-width="1" fill="#000" />
+					  <path fill="#FFF" stroke="#000000" stroke-miterlimit="10" d="M14,12.4c-0.7-1.7-2.6-3-5-3s-4.3,1.2-5,3"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
